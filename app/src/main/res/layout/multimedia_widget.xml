@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.WidgetApp.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.WidgetApp.AppWidgetContainer">
+
+    <Button
+        android:id="@+id/btnWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go website"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:layout_marginLeft="16dp"
+        android:id="@+id/btnImage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btnWeb"
+        android:text="Image 1"
+        android:textColor="@color/white" />
+
+    <Button
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/btnImage1"
+        android:id="@+id/btnImage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image 2"
+        android:textColor="@color/white"
+        />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/btnImage1"
+        android:layout_width="match_parent"
+        android:src="@drawable/img1"
+        android:layout_height="140dp"/>
+    <Button
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="16dp"
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:textColor="@color/white"
+        />
+    <Button
+        android:layout_below="@id/imageView"
+        android:layout_toRightOf="@id/btnPlay"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/btnPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:textColor="@color/white"
+        />
+    <Button
+        android:layout_below="@id/imageView"
+        android:layout_toRightOf="@id/btnPause"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:textColor="@color/white"
+        />
+    <Button
+        android:layout_below="@id/imageView"
+        android:layout_toRightOf="@id/btnStop"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textColor="@color/white"
+        />
+</RelativeLayout>
